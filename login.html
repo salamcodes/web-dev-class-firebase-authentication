@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 320px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .social-btn {
+      background: #333;
+    }
+    .google {
+      background: #db4437;
+    }
+    .github {
+      background: #24292e;
+    }
+    .link {
+      margin-top: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="form">
+      <input id="email" type="email" placeholder="Email" required /><br>
+      <input id="password" type="password" placeholder="Password" required /><br>
+      <button type="submit">Login</button>
+    </form>
+    <button type="button" class="google">Sign in with Google</button>
+    <button type="button" class="github">Sign in with GitHub</button>
+    <div class="link">
+      <a href="#" id="fgt-btn">Forgot Password?</a><br>
+      <a href="register.html">Create an account</a>
+    </div>
+  </div>
+
+  <script type="module" src="./script/login.js"></script>
+</body>
+</html>

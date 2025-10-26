@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 320px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      background: #ff4b5c;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff1e3a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Home Page</h1>
+    <p>You are logged in!</p>
+    <button id="signOut">Logout</button>
+  </div>
+
+  <script type="module" src="./script/script.js"></script>
+</body>
+</html>
